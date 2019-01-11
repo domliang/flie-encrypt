@@ -1,0 +1,3 @@
+#!/bin/bash
+
+tar -czf - ./raw/* | openssl enc -e -aes256 -out encrypted.tar.gz
